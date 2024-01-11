@@ -1,6 +1,6 @@
 # TEC Heat pump
 
-Information about the TEC QRS11 heat pump.
+Information about the TEC QRS11 heat pump and it's modbus connection. Not all values are know yet. USE AT YOUR OWN RISK.
 
 ## Wordlist
 
@@ -31,6 +31,7 @@ Some words are shortend to make it easer to read, here is the list of word
 | 1       | AL01      | Alarm: Low pressure                                                |
 | 2       | AL02      | Alarm: High pressure                                               |
 | 3       | AL03      | Alarm: Low outlet water temperature (ST < AR01)                    |
+|         |           |                                                                    |
 | 5       | AL05      | Alarm: High outlet water temperature (ST > AR03)                   |
 | 6       | AL17      | Alarm: Water flow is short                                         |
 | 7       | AL18      | Alarm: Low pressure alarms times within 24 hours is over the limit |
@@ -38,6 +39,7 @@ Some words are shortend to make it easer to read, here is the list of word
 | 9       | AL20      |                                                                    |
 | 10      | AL21      |                                                                    |
 | 11      | AL24      |                                                                    |
+|         |           |                                                                    |
 | 13      | AL37      |                                                                    |
 | 14      | AL38      |                                                                    |
 | 15      | AL71      |                                                                    |
@@ -46,11 +48,17 @@ Some words are shortend to make it easer to read, here is the list of word
 | 18      | AL74      |                                                                    |
 | 19      | AL75      |                                                                    |
 | 20      | AL76      |                                                                    |
+|         |           |                                                                    |
 | 23      | AL78      |                                                                    |
+|         |           |                                                                    |
 | 25      |           | Secondary Pump                                                     |
+|         |           |                                                                    |
 | 27      |           | Primary Pump                                                       |
+|         |           |                                                                    |
 | 32      | NO4       | AC Heater                                                          |
+|         |           |                                                                    |
 | 36      | NO8       | DHW Heater                                                         |
+|         |           |                                                                    |
 | 39      | NO6       | Gas boiler                                                         |
 
 ### Input register (read-only)
@@ -66,8 +74,12 @@ Some words are shortend to make it easer to read, here is the list of word
 | 7       | B7        | High Pressure Side  | 0.1 bar    |
 | 8       |           | Flow                | 0.1 m3/h   |
 | 9       |           | Room Temperature    | 0.1°C      |
+|         |           |                     |            |
 | 13      |           | Compressor          | 1 Hz       |
+|         |           |                     |            |
 | 17      | B4        | Hot Water           | 0.1°C      |
+| 18      |           | Operating Hours     | 1 Hour     |
+|         |           |                     |            |
 | 20      |           | Unit State          | unit_state |
 
 ### Holding Register (read-write)
@@ -76,6 +88,7 @@ Some words are shortend to make it easer to read, here is the list of word
 | Address | Parameter | Value                                                              | default | min  | max  | unit  | Access       |
 | ------- | --------- | ------------------------------------------------------------------ | ------- | ---- | ---- | ----- | ------------ |
 | 9       |           | Room Temperature                                                   |         |      |      | 0.1°C |              |
+|         |           |                                                                    |         |      |      |       |              |
 | 61      | ST01      | Temperature on cooling mode                                        | 13      | ST11 | ST12 | 0.1°C | User         |
 | 62      | ST02      | Temperature on heating mode                                        | 35      | ST13 | ST14 | 0.1°C | User         |
 | 63      | ST03      | Temperature difference on cooling mode                             | 1       | 1    | 10   | 0.1°C | User         |
@@ -91,6 +104,7 @@ Some words are shortend to make it easer to read, here is the list of word
 | 73      | ST16      | Maximum settable DHW temperature                                   | 65      | ST15 | 80   | 0.1°C | Manufacturer |
 | 74      | ST17      | SG Function: Cooling/heating water temperature decrement/increment | 2       | 1    | 10   | 0.1°C | User         |
 | 75      | ST18      | SG Function: DHW temperature increment                             | 5       | 1    | 10   | 0.1°C | User         |
+|         |           |                                                                    |         |      |      |       |              |
 | 77      | ST33      | DHW circulation pump off interval                                  | 15      | 0    | 180  | 1 min | User         |
 | 78      | ST34      | DHW circulation pump running time                                  | 3       | 0    | 180  | 1 min | User         |
 | 79      | ST09      | DHW temperature setup                                              | 50      | ST15 | ST16 | 0.1°C | User         |
