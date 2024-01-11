@@ -26,13 +26,32 @@ Some words are shortend to make it easer to read, here is the list of word
 
 ### Discrete input (read-only)
 
-| Address | Parameter | Value          |
-| ------- | --------- | -------------- |
-| 25      |           | Secondary Pump |
-| 27      |           | Primary Pump   |
-| 32      | NO4       | AC Heater      |
-| 36      | NO8       | DHW Heater     |
-| 39      | NO6       | Gas boiler     |
+| Address | Parameter | Value                                                              |
+| ------- | --------- | ------------------------------------------------------------------ |
+| 1       | AL01      | Alarm: Low pressure                                                |
+| 2       | AL02      | Alarm: High pressure                                               |
+| 3       | AL03      | Alarm: Low outlet water temperature (ST < AR01)                    |
+| 5       | AL05      | Alarm: High outlet water temperature (ST > AR03)                   |
+| 6       | AL17      | Alarm: Water flow is short                                         |
+| 7       | AL18      | Alarm: Low pressure alarms times within 24 hours is over the limit |
+| 8       | AL19      | Alarm: High pressure alarms times within 24 is over the limit      |
+| 9       | AL20      |                                                                    |
+| 10      | AL21      |                                                                    |
+| 11      | AL24      |                                                                    |
+| 13      | AL37      |                                                                    |
+| 14      | AL38      |                                                                    |
+| 15      | AL71      |                                                                    |
+| 16      | AL72      |                                                                    |
+| 17      | AL73      |                                                                    |
+| 18      | AL74      |                                                                    |
+| 19      | AL75      |                                                                    |
+| 20      | AL76      |                                                                    |
+| 23      | AL78      |                                                                    |
+| 25      |           | Secondary Pump                                                     |
+| 27      |           | Primary Pump                                                       |
+| 32      | NO4       | AC Heater                                                          |
+| 36      | NO8       | DHW Heater                                                         |
+| 39      | NO6       | Gas boiler                                                         |
 
 ### Input register (read-only)
 
