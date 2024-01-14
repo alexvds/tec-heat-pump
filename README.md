@@ -57,6 +57,8 @@ Some words are shortend to make it easer to read, here is the list of word
 |         |           |                                                                    |
 | 32      | NO4       | AC Heater                                                          |
 |         |           |                                                                    |
+| 34      | NO1       | DHW Circulation Pump                                               |
+|         |           |                                                                    |
 | 36      | NO8       | DHW Heater                                                         |
 |         |           |                                                                    |
 | 39      | NO6       | Gas boiler                                                         |
@@ -76,6 +78,7 @@ Some words are shortend to make it easer to read, here is the list of word
 | 9       |           | Room Temperature    | 0.1°C      |
 |         |           |                     |            |
 | 13      |           | Compressor          | 1 Hz       |
+| 14      | Y3        | Indoor pump PWM     | 0.1%       |
 |         |           |                     |            |
 | 17      | B4        | Hot Water           | 0.1°C      |
 | 18      |           | Operating Hours     | 1 Hour     |
@@ -108,6 +111,7 @@ Some words are shortend to make it easer to read, here is the list of word
 | 77      | ST33      | DHW circulation pump off interval                                  | 15      | 0    | 180  | 1 min | User         |
 | 78      | ST34      | DHW circulation pump running time                                  | 3       | 0    | 180  | 1 min | User         |
 | 79      | ST09      | DHW temperature setup                                              | 50      | ST15 | ST16 | 0.1°C | User         |
+| 80      | ST10      | DHW temperature difference setup                                   | 3       | 1    | 10   | 0.1°C | User         |
 
 ### Convertion Tables
 
