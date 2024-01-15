@@ -56,7 +56,7 @@ Some words are shortend to make it easer to read, here is the list of word
 | 27      |           | Primary Pump                                                       |
 |         |           |                                                                    |
 | 32      | NO4       | AC Heater                                                          |
-|         |           |                                                                    |
+| 33      | D07       | Crankshaft heater                                                  |
 | 34      | NO1       | DHW Circulation Pump                                               |
 |         |           |                                                                    |
 | 36      | NO8       | DHW Heater                                                         |
