@@ -19,10 +19,11 @@ Some words are shortend to make it easer to read, here is the list of word
 
 ### Discrete output (coil / read-write)
 
-| Address | Parameter | Value      |
-| ------- | --------- | ---------- |
-| 1       | DI4       | AC Switch  |
-| 2       | DI5       | DHW Switch |
+| Address | Parameter | Value       |
+| ------- | --------- | ----------- |
+| 1       | DI4       | AC Switch   |
+| 2       | DI5       | DHW Switch  |
+| 3       | TR12      | SG Function |
 
 ### Discrete input (read-only)
 
