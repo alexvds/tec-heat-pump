@@ -85,6 +85,8 @@ Some words are shortend to make it easer to read, here is the list of word
 | 18      |           | Operating Hours     | 1 Hour     |
 |         |           |                     |            |
 | 20      |           | Unit State          | unit_state |
+| 22      |           | Produced heat       | kWh        |
+| 23      |           | Energy consumed     | kWh        |
 
 ### Holding Register (read-write)
 
